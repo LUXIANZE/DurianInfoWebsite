@@ -1,0 +1,20 @@
+durian website
+
+<pages>
+1. index(home)
+-about what company does
+-brief about products
+-other services
+-show prices
+
+2. about
+
+3. become a partner
+
+4. career
+
+5. megazine
+
+6. privacy policy page
+
+7. products

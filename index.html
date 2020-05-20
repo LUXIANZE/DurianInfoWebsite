@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Durian index</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav>
+		<ul class="topnav" id="dropdownClick">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li class="topnav-right"><a href="#signup">Sign Up</a></li>
+			<li class="topnav-right"><a href="#signin">Sign In</a></li>
+			<li class="dropdownMenu"><a href="javascript:void(0);" onclick="dropdownMenuClicked()">&#9776;</a></li>
+		</ul>
+	</nav>
+
+	<div class="container" id="section-1-gradient">
+		<div class="row">
+			<div class="col-6">
+				<div class="leftSide-col">
+					<h1 class="large">Durian Info</h1>
+					<h1 class="large">Made for Durian Lovers</h1>
+				</div>
+				<form>
+					<div class="leftSide-col">
+						<h2>Username:</h2>
+						<input class="inputbox" name="username" type="text" placeholder="Username">
+						<h2>Password:</h2>
+						<input class="inputbox" name="password" type="text" placeholder="Password">
+					</div>
+				</form>
+			</div>
+			<div class="col-6">
+				<div class="rightSide-col">
+					<div class="iframe-wrapper">
+						<iframe width="450px" height="270px" src="https://www.youtube.com/embed/RgzsUWPrf_s"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<header>
+			<h1 class="section2header">Redefining Durian Farming</h1>
+		</header>
+
+		<div class="row">
+			<div class="col-4">
+				<div class="box">
+					<div class="mainPage-image-wrapper">
+						<img class="mainPage-image roundedtop" src="images\background\background 3.jpg">
+					</div>
+					<label>Learn more about Durians</label>
+					<p>The Durian as a mysterios fruit with foul smelling scent but
+						enchanting taste is the best gift god has given to tropical
+						forest. However there are much more knowledges than you
+						could expect in the fruit farming and grading itself.</p>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="box">
+					<div class="mainPage-image-wrapper">
+						<img class="mainPage-image roundedtop" src="images\background\background 13.jpg">
+					</div>
+					<label>Order with us</label>
+					<p>We who aim to produce best Durians have the best team in
+						assuring the quality of our production. Over the decade, a
+						special grading system to define the fruit has been calibrated.
+						We promise to sell only the best fruit to our customers.
+					</p>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="box">
+					<div class="mainPage-image-wrapper">
+						<img class="mainPage-image roundedtop" src="images\background\background 1.jpg">
+					</div>
+					<label>Visit our farm</label>
+					<p>Our farming site is located at a small peak in the town
+						of Kuala Lipis. The nutritious soil and specialised
+						traditional, manual way of farming ensured each fruit
+						from our farm is a product of quality.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<button class="learnmore">Learn More</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="section-3-gradient">
+		<div class="row">
+			<div class="col-1">
+				<!-- empty space -->
+			</div>
+			<div class="col-6">
+				<article>
+					<p class="greenBG-paragraph">
+						Our organisation is widely recognised nation-wide, the top-notch
+						fruit that we harvest and the quality assured processing is almost
+						unbeatable in the industry. We often see ourselves as producer of
+						not only food to eat but also gift to give.
+						Our organisation is widely recognised nation-wide, the top-notch
+						fruit that we harvest and the quality assured processing is almost
+						unbeatable in the industry. We often see ourselves as producer of
+						not only food to eat but also gift to give.
+						Our organisation is widely recognised nation-wide, the top-notch
+						fruit that we harvest and the quality assured processing is almost
+						unbeatable in the industry. We often see ourselves as producer of
+						not only food to eat but also gift to give.
+					</p>
+				</article>
+			</div>
+			<div class="col-5">
+				<div class="section-3-image">
+					<img src="images\megazine\megazine 4.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="mainPage-footer">
+		<div class="row">
+			<div class="col-3 mobileStack">
+				<h3>Company</h3>
+				<ul>
+					<li>About</li>
+					<li>Blogs</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+			<div class="col-3 mobileStack">
+				<h3>Company</h3>
+				<ul>
+					<li>About</li>
+					<li>Blogs</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+			<div class="col-3 mobileStack">
+				<h3>Company</h3>
+				<ul>
+					<li>About</li>
+					<li>Blogs</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+			<div class="col-3 mobileStack">
+				<h3>Company</h3>
+				<ul>
+					<li>About</li>
+					<li>Blogs</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		function dropdownMenuClicked() {
+			var x = document.getElementById("dropdownClick");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+				// change topnav to topnav.responsive
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+
+
+</html>

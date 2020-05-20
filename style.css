@@ -1,0 +1,311 @@
+/* Defaults */
+
+nav, header, footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+label {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 0px 20px;
+}
+
+article p {
+    font-size: 17px;
+    padding: 40px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.leftSide-col {
+    margin-left: 30%;
+}
+
+h1.large {
+    color: #0d4607;
+}
+
+input[type="text"] {
+    font-size: 15px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+form h2 {
+    color: #0d4607;
+    font-size: 17px;
+}
+
+h1.section2header {
+    text-align: center;
+}
+
+.redborder {
+    border-color: red;
+    border-width: 5px;
+}
+
+/* Nav Bar */
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #69ad69;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    color: #1c7d1f;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+ul.topnav li a:hover {
+    background-color: white;
+}
+
+ul.topnav li.dropdownMenu {
+    display: none;
+}
+
+/* Custom styles */
+
+#section-1-gradient {
+    background-image: linear-gradient(to right, #5eb560, #c0dac1);
+}
+
+#section-3-gradient {
+    background-image: linear-gradient(to left, #5eb560, #c0dac1);
+}
+
+button {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: #69ad69;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+button.learnmore {
+    text-align: center;
+    margin: auto;
+}
+
+div.box {
+    margin: 24px;
+    padding-bottom: 5px;
+    min-height: 316px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 4px 7px 4px rgba(135, 135, 135, 1);
+}
+
+div.box:hover {
+    transform: scale(1.01);
+    transform-origin: bottom;
+}
+
+div.mainPage-image-wrapper {
+    width: 100%;
+}
+
+div.section-3-image img {
+    display: block;
+    margin: auto;
+    box-shadow: 79px 17px 16px -25px rgba(61, 61, 61, 1), -79px 17px 16px -25px rgba(61, 61, 61, 1);
+}
+
+img.mainPage-image {
+    width: 100%;
+}
+
+.roundedtop {
+    border-radius: 20px 20px 0px 0px;
+}
+
+p.greenBG-paragraph {
+    color: #2a7815;
+}
+
+.iframe-wrapper {
+    padding: 0% 10%;
+}
+
+footer.mainPage-footer {
+    background-color: darkgray;
+    padding-left: 10%;
+}
+
+footer.mainPage-footer h3 {
+    color: white;
+}
+
+footer.mainPage-footer ul {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+}
+
+footer.mainPage-footer ul li {
+    color: white;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnav li.dropdownMenu {
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    ul.topnav.responsive li.dropdownMenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .col-1, .col-4, .col-5, .col-6, .col-7 {
+        width: 100%;
+        margin: 0;
+    }
+    div.mobileStack {
+        width: 50%;
+        display: block;
+    }
+    .leftSide-col, .rightSide-col {
+        margin: 5%;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+    }
+    div.section-3-image img {
+        width: 76%;
+        box-shadow: none;
+    }
+    .iframe-wrapper {
+        padding: 0px;
+    }
+}
